@@ -19,7 +19,7 @@ import java.math.BigDecimal;
 public class MainActivity3 extends AppCompatActivity {
 TextView txtv,txtv1;
 PayPalConfiguration m_Pay;
-String str="AeFV3HHQD7uQgSq9vptUs0f6ST6cpAKVcIj_PkV-yrtCH02fo27qeBAv8yqikYaWRbwB0VtxDbrNmmOT";
+String str="YOUR_PAY_PAL_KEY_HERE";
 Intent intent;int s=999;String paymentAmount;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
