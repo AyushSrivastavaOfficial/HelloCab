@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEFFFC"
+    tools:context="com.jkm.hellocab.MainActivity2"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edt4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edt5"
+        app:layout_constraintStart_toStartOf="@+id/edt3"
+        app:layout_constraintTop_toBottomOf="@+id/edt3" />
+
+    <EditText
+        android:id="@+id/edt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="E-Mail ID"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edt6"
+        app:layout_constraintStart_toStartOf="@+id/edt4"
+        app:layout_constraintTop_toBottomOf="@+id/edt4" />
+
+    <EditText
+        android:id="@+id/edt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edt7"
+        app:layout_constraintStart_toStartOf="@+id/edt5"
+        app:layout_constraintTop_toBottomOf="@+id/edt5" />
+
+    <EditText
+        android:id="@+id/edt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:ems="10"
+        android:hint="Retype PASSWORD"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btn3"
+        app:layout_constraintStart_toStartOf="@+id/edt6"
+        app:layout_constraintTop_toBottomOf="@+id/edt6" />
+
+    <Button
+        android:id="@+id/btn3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/black"
+        android:text="REGISTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt7" />
+</android.support.constraint.ConstraintLayout>

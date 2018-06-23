@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btn"
+        android:ems="9"
+        android:hint="Enter Address"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:onClick="process"
+        android:text="SEARCH"
+        android:textSize="13dp" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        tools:context="com.jkm.mapssearch.MapsActivity" />
+
+    <Button
+        android:id="@+id/bbtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/black"
+        android:onClick="process"
+        android:text="BOOK" />
+</RelativeLayout>
